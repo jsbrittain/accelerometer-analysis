@@ -22,23 +22,7 @@ Ensure you have these dependencies installed on your system: [python3](https://w
 Download the repository as a zip file from: [https://github.com/jsbrittain/accelerometer-analysis/zipball/main](https://github.com/jsbrittain/accelerometer-analysis/zipball/main), unzip the file, open a terminal / command prompt and `cd` to that folder.
 
 ### Install and run
-```
-# Setup virtual environment
-python3 -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-python -m pip install -r requirements.txt
-
-# Enable interactive widgets
-jupyter nbextension enable --py widgetsnbextension
-
-# Start interactive jupyter notebook with analysis script
-jupyter lab scripts/lookatdata.ipynb
-```
-
-Be sure to re-enable the virtual environment `source venv/bin/activate` before running the Jupyter notebook in the future to ensure that the full configuration (including widgets) is retained.
+Launch from the command line using: `./run.sh`
 
 If you want to clear any existing results from the notebook, run the following before opening the file:
-
 `jupyter nbconvert scripts/lookatdata.ipynb --clear-output`
